@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vamos Contar</h1>
+    </header>
+    <main>
+      <div>
+        <form action="">
+          <label for="inicioContador">Inicio:</label>
+          <input
+            type="number"
+            name="inicioContador"
+            id="inicioContador"
+            placeholder="Numero para iniciar..."
+          />
+          <br />
+          <label for="fimContador">Fim: </label>
+          <input
+            type="number"
+            name="fimContador"
+            id="fimContador"
+            placeholder="Numero para finalizar..."
+          />
+          <br />
+          <label for="saltoContador">Passo: </label>
+          <input
+            type="number"
+            name="saltoContador"
+            id="saltoContador"
+            placeholder="Valor do salto.."
+          />
+        </form>
+        <button type="submit" id="butaoContar">CONTAR</button>
+      </div>
+      <div id="resultadoDiv">
+        <p id="resultado">Preparando a contagem...</p>
+      </div>
+    </main>
+    <footer>
+      <!-- Texto de direitos autorais com caractere de direitos autorais e nome -->
+      <p>&copy; Luiz Henrique</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
