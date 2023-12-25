@@ -33,3 +33,4 @@ function funcaoContar() {
     resultado.innerHTML = "O valor do salto deve ser maior que zero.";
   }
 }
+
