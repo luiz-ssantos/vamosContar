@@ -17,20 +17,25 @@ function funcaoContar() {
 
   resultado.innerHTML = "";
 
-  if (saltoContador > 0) {
+  if (saltoContador == 0) {
+    resultado.innerHTML = "O valor do salto deve ser maior que zero!";
+  } else if (inicioContador > fimContador) {
+    for (
+      let contador = inicioContador;
+      contador >= fimContador;
+      contador -= saltoContador
+    )
+      resultado.innerHTML +=
+        contador + (contador > fimContador ? " &#10145; " : "");
+  } else if (inicioContador < fimContador) {
     for (
       let contador = inicioContador;
       contador <= fimContador;
       contador += saltoContador
-    ) {
-      resultado.innerHTML = resultado.innerHTML + contador;
-
-      if (contador + saltoContador <= fimContador) {
-        resultado.innerHTML = resultado.innerHTML + " &#10145; ";
-      }
-    }
+    )
+      resultado.innerHTML +=
+        contador + (contador < fimContador ? " &#10145; " : "");
   } else {
-    resultado.innerHTML = "O valor do salto deve ser maior que zero.";
+    resultado.innerHTML = "[ERRO] Falta dados!";
   }
 }
-
